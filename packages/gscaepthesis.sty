@@ -1,0 +1,229 @@
+% 引入必要的宏包
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{xcolor}
+% \usepackage{ctex}
+\usepackage{zhnumber}
+
+\ctexset{
+  chapter/format = \bfseries\centering\zihao{-3},
+  chapter/break = \clearpage,
+  chapter/beforeskip = 0pt,
+  chapter/afterskip = 20pt,
+  section/format = \bfseries\raggedright\zihao{4},
+  subsection/format = \bfseries\raggedright\zihao{-4},
+  subsubsection/format = \simkai\raggedright\zihao{-4},
+  appendix/name = {}
+}
+\ctexset{
+  chapter/break = \clearpage,
+}
+
+\setcounter{secnumdepth}{3}
+
+% 设置英文字体
+\usepackage{fontspec}
+\setmainfont[BoldFont = timesbd.ttf,Path=caep_fonts/]{times.ttf}
+
+%设置中文字体
+% \setCJKmainfont[Path=caep_fonts/]{simsun.ttc} %宋体
+\setCJKmainfont[Path=caep_fonts/ , AutoFakeBold]{simsun.ttc}%宋体的加粗
+
+\setCJKfamilyfont{simkai}[Path=caep_fonts/]{simkai.ttf}
+\setCJKfamilyfont{gbkai}[Path=caep_fonts/ , AutoFakeBold]{GB2312.ttf}
+\newcommand{\simkai}{\CJKfamily{simkai}} %楷体
+
+
+% 设置页边距
+\usepackage[top = 3cm,bottom = 2.5cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% 目录左对齐
+\usepackage{tocloft}
+\setlength{\cftchapindent}{0cm}
+\setlength{\cftsecindent}{0cm}
+\setlength{\cftsubsecindent}{0cm}
+\setlength{\cftsubsubsecindent}{0cm}
+\renewcommand{\cfttoctitlefont}{\bfseries\zihao{-3}\clearpage}
+\renewcommand{\contentsname}{\vspace{2em} \hfill 目录 \hfill}
+\tocloftpagestyle{fancy}
+
+% 设置附录格式
+\usepackage{appendix}
+\renewcommand{\appendixtocname}{附录}
+\newcommand{\gscaepappendix}{
+  \appendix
+  \addappheadtotoc
+  \ctexset{
+    chapter/afterskip = 5pt,
+    subsection/format = \bfseries\raggedright\zihao{-4},
+    subsubsection/format = \simkai\raggedright\zihao{-4},
+    section/number = \Alph{section},
+    subsection/number = \Alph{section}.\arabic{subsection},
+    subsubsection/number = \Alph{section}.\arabic{subsection}.\arabic{subsubsection},
+    section/format = \bfseries\raggedright\zihao{4}
+  }
+  \zihao{5}
+  \clearpage
+  \begin{center}
+    \bfseries\centering\zihao{-3} 附录
+  \end{center}
+}
+
+% 设置页眉、页脚
+
+\usepackage{fancyhdr}
+
+\fancyhead[C]{\zihao{5}\textcolor{gray}{\thecntitle}}
+\fancyhead[L]{}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[LE]{\textcolor{gray}{\thepage}}
+\fancyfoot[RO]{\textcolor{gray}{\thepage}}
+
+\renewcommand{\headrulewidth}{0.5pt}%分隔线宽度4磅
+\renewcommand{\footrulewidth}{0pt}
+\usepackage{xpatch}
+\xpretocmd\headrule{\color{gray}}{}{\PatchFailed}
+
+
+% 设置公式和章节的标号
+\usepackage{amsmath}
+\numberwithin{equation}{chapter}
+\renewcommand{\theequation}{\thechapter-\arabic{equation}}
+
+%中英文标题命令
+\newcommand{\cntitle}[1]{\newcommand{\thecntitle}{#1}}
+\newcommand{\entitle}[1]{\newcommand{\theentitle}{#1}}
+
+\newcommand{\cnauthor}[1]{\newcommand{\thecnauthor}{#1}}
+\newcommand{\enauthor}[1]{\newcommand{\theenauthor}{#1}}
+
+% 实现给定宽度的下划线
+\newcommand{\fixedunderline}[2][4cm]{\hskip1pt \underline{\hb@xt@ #1{\hss#2 \hss}}\hskip3pt }
+
+% 实现长下划线功能的宏包
+\usepackage{ulem}
+
+%定义关键词
+\newcommand{\keywordscn}[1]{\newcommand{\thekeywordscn}{#1}}
+\newcommand{\keywordsen}[1]{\newcommand{\thekeywordsen}{#1}}
+
+%打印中英关键词
+\newcommand{\printkeywordscn}{\hspace*{\fill}\\
+{\noindent \zihao{-4} \textbf{关键词：\thekeywordscn}。}}
+
+\newcommand{\printkeywordsen}{\hspace*{\fill}\\
+{\noindent \zihao{-4} \textbf{Keywords: \thekeywordsen}.}}
+
+%导师的姓名和职称
+\newcommand{\supervisornamecn}[2]{\newcommand{\thesupervisorcn}{#1} \newcommand{\supervisortitlecn}{#2}}
+\newcommand{\supervisornameen}[2]{\newcommand{\thesupervisoren}{#1} \newcommand{\supervisortitleen}{#2}}
+
+%答辩委员会主席和评阅人
+\newcommand{\chairman}[1]{\newcommand{\thechairman}{#1}}
+\newcommand{\reviewer}[1]{\newcommand{\thereviewer}{#1}}
+
+% 申请学位级别
+
+% 缺省值
+\newcommand{\thedgreelevelcn}{博士}
+\newcommand{\thedgreelevelen}{Doctor of Science}
+% 理学博士
+\newcommand{\doctorofscience}{\renewcommand{\thedgreelevelcn}{博士}\renewcommand{\thedgreelevelen}{Doctor of Science}}
+% 理学硕士
+\newcommand{\masterofscience}{\renewcommand{\thedgreelevelcn}{硕士}\renewcommand{\thedgreelevelen}{Master of Science}}
+% 工学博士
+\newcommand{\doctorofengineering}{\renewcommand{\thedgreelevelcn}{博士}\renewcommand{\thedgreelevelen}{Doctor of Engineering}}
+% 工学硕士
+\newcommand{\masterofengineering}{\renewcommand{\thedgreelevelcn}{硕士}\renewcommand{\thedgreelevelen}{Master of Engineering}}
+
+% 专业名称
+\newcommand{\fieldofstudycn}[1]{\newcommand{\thefieldcn}{#1}}
+\newcommand{\fieldofstudyen}[1]{\newcommand{\thefielden}{#1}}
+
+%提交日期和答辩日期（中文）
+\newcommand{\dateofsubmmit}[1]{\newcommand{\thesubmitdate}{\zhdate{#1}}}
+\newcommand{\dateofdefense}[1]{\newcommand{\thedefencedate}{\zhdate{#1}}}
+
+
+
+% 提取2024/05/03格式的日期字符串
+
+% \usepackage[english]{babel}
+\usepackage{datetime}
+\usepackage{xstring}
+
+\newcommand{\extractdate}[1]{%
+  \StrBefore{#1}{/}[\thelocalyear]%
+  \StrBetween[1,2]{#1}{/}{/}[\thelocalmonth]%
+  \StrBehind[2]{#1}{/}[\thelocalday]%
+}
+
+%论文日期
+\newcommand{\thesisdate}[1]{\newcommand{\thethesisdatecn}{\zhdate{#1}}
+\extractdate{#1}
+\newcommand{\thethesismonthen}{\monthname[\thelocalmonth], \thelocalyear}
+}
+
+% 设置颜色
+\usepackage[colorlinks=true,linkcolor = black]{hyperref}
+
+% 定义参考文献的格式
+\usepackage[backend=biber,style=gb7714-2015, uniquename=full, gbfieldtype=true, gbpunctin=false, gbfootbib=true]{biblatex}
+
+% 打印参考文献的命令
+\newcommand{\printbibgscaep}{
+  \addcontentsline{toc}{chapter}{参考文献}
+  \printbibliography[heading=bibliography,title={参考文献}]
+}
+
+\newenvironment{acknowledgements}{\chapter*{致谢}\addcontentsline{toc}{chapter}{致谢}}{\clearpage}
+
+% biblatex宏包的参考文献数据源即bib文件加载方式
+\addbibresource[location=local]{reference.bib}
+% 设置参考文献的字号
+\renewcommand*{\bibfont}{\zihao{5}}
+
+% 创建中英封面的命令
+\newcommand{\makecover}{\input{packages/makecover}}
+
+% 创建中英摘要的环境
+
+% 中文摘要
+\newenvironment{cnabstract}{
+\begin{center}
+  \bfseries\centering\zihao{-3} 摘要
+\end{center}
+}{
+\printkeywordscn %打印关键词
+
+% 从中文摘要页开始，用大写罗马数字作为页码
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\clearpage
+}
+
+% 英文摘要
+\newenvironment{enabstract}{
+  \begin{center}
+    \bfseries\centering\zihao{-3} Abstract
+  \end{center}
+}{
+  \printkeywordsen
+}
+
+% 分类号、密级、UDC、编号等信息
+
+\newcommand{\theclsnum}{请填写分类号}
+\newcommand{\classificationnumber}[1]{\renewcommand{\theclsnum}{#1}}
+
+\newcommand{\theconflv}{公开}
+\newcommand{\confidentialitylevel}[1]{\renewcommand{\theconflv}{#1}}
+
+\newcommand{\theUDC}{请填写UDC}
+\newcommand{\thesisudc}[1]{\renewcommand{\theUDC}{#1}}
+
+\newcommand{\thethesisnum}{请填写编号}
+\newcommand{\thesisnum}[1]{\renewcommand{\thethesisnum}{#1}}
