@@ -18,7 +18,17 @@ XeLaTeX -> Biber -> XeLaTeX*2
 
 - 按照学位论文要求, 脚注以文献的形式出现, 请参照模板中的例子进行编辑. 
 
-- 编译如果出现问题, 可以看看`/packages/gscaep.sty`文件中是否调用了与主文件中冲突的包.
+- 编译如果出现问题, 可以看看`/packages/gscaepthesis.sty`文件中是否调用了与主文件中冲突的包。本模板已经默认加载了常用宏包，如：
+
+```latex
+\usepackage{graphicx} % 插图功能
+\usepackage{bm} % 数学矢量用黑体
+\usepackage{physics} % 物理常用符号
+```
+
+
+
+
 
 ## 更新说明 2025 - 05 - 03
 
@@ -43,6 +53,10 @@ XeLaTeX -> Biber -> XeLaTeX*2
   - 标号分隔符从冒号改为空格
 
 
+
+## 鸣谢：
+
+T. F. Cui, M. Z. Xing
 
 
 
