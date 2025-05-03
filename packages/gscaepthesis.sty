@@ -65,6 +65,11 @@
   }
   \zihao{5}
   \clearpage
+  \renewcommand{\thesection}{\Alph{section}}
+  \numberwithin{equation}{section}
+  \numberwithin{figure}{section}
+  \renewcommand{\theequation}{\thesection-\arabic{equation}}
+  \renewcommand{\thefigure}{\thesection.\arabic{figure}}
   \begin{center}
     \bfseries\centering\zihao{-3} 附录
   \end{center}
