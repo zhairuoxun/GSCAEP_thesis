@@ -127,6 +127,23 @@
 %导师的姓名和职称
 \newcommand{\supervisornamecn}[2]{\newcommand{\thesupervisorcn}{#1} \newcommand{\supervisortitlecn}{#2}}
 \newcommand{\supervisornameen}[2]{\newcommand{\thesupervisoren}{#1} \newcommand{\supervisortitleen}{#2}}
+%第二个导师的姓名和职称缺省值
+\newcommand{\thesecondsupervisorcn}{}
+\newcommand{\secondsupervisortitlecn}{}
+\newcommand{\thesecondsupervisoren}{}
+\newcommand{\secondsupervisortitleen}{}
+%第二个导师的姓名和职称
+\newcommand{\secondsupervisornamecn}[2]{\renewcommand{\thesecondsupervisorcn}{\hfill #1} \renewcommand{\secondsupervisortitlecn}{\quad #2 \hfill}}
+\newcommand{\secondsupervisornameen}[2]{\renewcommand{\thesecondsupervisoren}{ \, #1} \renewcommand{\secondsupervisortitleen}{\quad and \quad #2}}
+
+%打印第一个导师的姓名职称
+\newcommand{\printsupervisorcn}{\thesupervisorcn \quad \supervisortitlecn}
+\newcommand{\printsupervisoren}{\quad \supervisortitleen \, \thesupervisoren}
+
+%打印第二个导师的姓名职称
+\newcommand{\printsecondsupervisorcn}{\thesecondsupervisorcn \secondsupervisortitlecn}
+\newcommand{\printsecondsupervisoren}{\secondsupervisortitleen \thesecondsupervisoren}
+
 
 %答辩委员会主席和评阅人
 \newcommand{\chairman}[1]{\newcommand{\thechairman}{#1}}

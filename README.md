@@ -26,7 +26,11 @@ XeLaTeX -> Biber -> XeLaTeX*2
 \usepackage{physics} % 物理常用符号
 ```
 
+## 更新说明 2025 - 05 - 04
 
+- 青年节快乐！
+
+- 增加了双导师功能，使用方法见`main.tex` 32 到 34 行，需要的话请自行取消注释.
 
 
 
@@ -56,13 +60,11 @@ XeLaTeX -> Biber -> XeLaTeX*2
 
 ## 鸣谢：
 
-T. F. Cui, M. Z. Xing
+T. F. Cui and M. Z. Xing
 
 
 
 后续计划（挖坑）增加内容:
-
-- 多个指导教师
 
 - 多文件独立编译
 
