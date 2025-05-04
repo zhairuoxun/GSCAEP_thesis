@@ -62,7 +62,9 @@ XeLaTeX -> Biber -> XeLaTeX*2
 
 ## 鸣谢：
 
-T. F. Cui and M. Z. Xing
+- T. F. Cui 
+- M. Z. Xing
+- L. X. Cui
 
 
 
