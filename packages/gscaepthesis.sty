@@ -143,9 +143,15 @@
 
 %答辩委员会主席和评阅人
 \newcommand{\chairman}[1]{\newcommand{\thechairman}{#1}}
-\newcommand{\reviewer}[1]{\newcommand{\thereviewer}{#1}}
+\newcommand{\reviewerfirstline}[1]{\newcommand{\thereviewerfirstline}{#1}}
+\newcommand{\thereviewersecondline}{}
+\newcommand{\printreviewersecondline}{}
+\newcommand{\reviewersecondline}[1]{
+  \renewcommand{\thereviewersecondline}{#1}
+  \renewcommand{\printreviewersecondline}{\newline \vspace{2pt} \hspace{7em}\uline{\hfill \thereviewersecondline \hfill} }
+}
 
-% 申请学位级别
+% 申请学位级
 
 % 缺省值
 \newcommand{\thedgreelevelcn}{博士}
