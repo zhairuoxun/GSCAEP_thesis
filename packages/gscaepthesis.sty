@@ -1,6 +1,8 @@
 % 引入必要的宏包
 \usepackage{graphicx}
 \usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{physics}
 \usepackage{xcolor}
 \usepackage{zhnumber}
@@ -92,7 +94,6 @@
 
 
 % 设置公式和章节的标号
-\usepackage{amsmath}
 \numberwithin{equation}{chapter}
 \renewcommand{\theequation}{\thechapter-\arabic{equation}}
 
@@ -197,12 +198,12 @@
 \usepackage[colorlinks=true,linkcolor = black]{hyperref}
 
 % 定义参考文献的格式
-\usepackage[backend=biber,style=gb7714-2015, uniquename=init, gbfieldtype=true, gbpunctin=false, gbfootbib=true]{biblatex}
+\usepackage[backend=biber,style=gb7714-2015, uniquename=init, gbfieldtype=true, gbpunctin=false, gbfootbib=true, gbnamefmt=lowercase,maxnames=10,doi=false,gbmedium=false]{biblatex}
 
 % 打印参考文献的命令
 \newcommand{\printbibgscaep}{
-  \addcontentsline{toc}{chapter}{参考文献}
   \printbibliography[heading=bibliography,title={参考文献}]
+  \addcontentsline{toc}{chapter}{参考文献}
 }
 
 \newenvironment{acknowledgements}{\chapter*{致谢}\addcontentsline{toc}{chapter}{致谢}}{\clearpage}
