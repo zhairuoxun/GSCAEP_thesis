@@ -26,6 +26,14 @@ XeLaTeX -> Biber -> XeLaTeX*2
 \usepackage{physics} % 物理常用符号
 ```
 
+## 更新寿命 2025 - 05 - 12
+
+- 增加命令`\displayudcinformation`, 见`main.tex`第17行. 注释掉这一行, 则不显示UDC, 反之亦然.
+
+- 增加命令 `\displaythesistimedate` 见`main.tex`第56行. 如果要在封面最下面显示日期而非单独月份，请将这一行取消注释.
+
+- 封面增加新的信息 `\degreedate`. 即学位授予时间. 如果要不显示学位授予时间，请注释掉`\displaydegreedate`
+
 ## 更新说明 2025 - 05 - 06
 
 - 更新参考文献的超链接位置

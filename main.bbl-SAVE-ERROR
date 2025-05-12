@@ -1,0 +1,280 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Guiner1982}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1e28df2862fd6077dc7e9e9abae97e8}{%
+           family={Guiner},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=b1e28df2862fd6077dc7e9e9abae97e8}{%
+           family={Guiner},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=5b6269b2ca000faa8b3258b39fd3cfc4}{%
+           family={施士元},
+           familyi={施\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{location}{1}{%
+        {北京}%
+      }
+      \list{publisher}{1}{%
+        {科学出版社}%
+      }
+      \strng{namehash}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{fullhash}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{fullhashraw}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{bibnamehash}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{authorbibnamehash}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{authornamehash}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{authorfullhash}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{authorfullhashraw}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{nameabibnamehash}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{nameanamehash}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{nameafullhash}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{nameafullhashraw}{b1e28df2862fd6077dc7e9e9abae97e8}
+      \strng{translatorbibnamehash}{5b6269b2ca000faa8b3258b39fd3cfc4}
+      \strng{translatornamehash}{5b6269b2ca000faa8b3258b39fd3cfc4}
+      \strng{translatorfullhash}{5b6269b2ca000faa8b3258b39fd3cfc4}
+      \strng{translatorfullhashraw}{5b6269b2ca000faa8b3258b39fd3cfc4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{X射线晶体学}
+      \field{usera}{M}
+      \field{userd}{chinese}
+      \field{usere}{chinese}
+      \field{userf}{english}
+      \field{year}{1982}
+      \field{dateera}{ce}
+      \field{pages}{148}
+      \range{pages}{1}
+      \keyw{Guiner1982}
+    \endentry
+    \entry{Canvendish1985}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=282ff953a3445c0b547ba19d5471af60}{%
+           family={Canvendish},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=927278a781656699cef1dfb3fa333892}{%
+           family={Field},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36ff997e81e28f9b632f4a65c916922c}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=282ff953a3445c0b547ba19d5471af60}{%
+           family={Canvendish},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=927278a781656699cef1dfb3fa333892}{%
+           family={Field},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=36ff997e81e28f9b632f4a65c916922c}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{686d8f099a28a063caf9681722b31525}
+      \strng{fullhash}{686d8f099a28a063caf9681722b31525}
+      \strng{fullhashraw}{686d8f099a28a063caf9681722b31525}
+      \strng{bibnamehash}{686d8f099a28a063caf9681722b31525}
+      \strng{authorbibnamehash}{686d8f099a28a063caf9681722b31525}
+      \strng{authornamehash}{686d8f099a28a063caf9681722b31525}
+      \strng{authorfullhash}{686d8f099a28a063caf9681722b31525}
+      \strng{authorfullhashraw}{686d8f099a28a063caf9681722b31525}
+      \strng{nameabibnamehash}{686d8f099a28a063caf9681722b31525}
+      \strng{nameanamehash}{686d8f099a28a063caf9681722b31525}
+      \strng{nameafullhash}{686d8f099a28a063caf9681722b31525}
+      \strng{nameafullhashraw}{686d8f099a28a063caf9681722b31525}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Int. J. Numer. Methods Eng}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{An approach to automatic three-dimensional finite-element mesh generation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{21}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{pages}{39\bibrangedash 347}
+      \range{pages}{309}
+      \keyw{Canvendish1985}
+    \endentry
+    \entry{Cao1993}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f4f7ee49ce85fdd237882183a42f086}{%
+           family={曹登庆},
+           familyi={曹\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=1f4f7ee49ce85fdd237882183a42f086}{%
+           family={曹登庆},
+           familyi={曹\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {西南交通大学}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{location}{1}{%
+        {成都}%
+      }
+      \strng{namehash}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{fullhash}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{fullhashraw}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{bibnamehash}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{authorbibnamehash}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{authornamehash}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{authorfullhash}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{authorfullhashraw}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{nameabibnamehash}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{nameanamehash}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{nameafullhash}{1f4f7ee49ce85fdd237882183a42f086}
+      \strng{nameafullhashraw}{1f4f7ee49ce85fdd237882183a42f086}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{动力系统的鲁棒稳定性分析}
+      \field{type}{博士学位论文}
+      \field{usera}{D}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \keyw{Cao1993}
+    \endentry
+    \entry{Jin1993}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b5118fb3108a7f314d4abd9add1c202}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=8b5118fb3108a7f314d4abd9add1c202}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Beijing}%
+      }
+      \list{publisher}{2}{%
+        {The People’s Posts}%
+        {Telecommunications Publishing House}%
+      }
+      \strng{namehash}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{fullhash}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{fullhashraw}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{bibnamehash}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{authorbibnamehash}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{authornamehash}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{authorfullhash}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{authorfullhashraw}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{nameabibnamehash}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{nameanamehash}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{nameafullhash}{8b5118fb3108a7f314d4abd9add1c202}
+      \strng{nameafullhashraw}{8b5118fb3108a7f314d4abd9add1c202}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. of 1993 Int.conf.on Neural networks and Signal Processing, Guangzhou, 1993 [C]}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{mark}{A}
+      \field{title}{Fan J B.Principles and architecture of fuzzy neural computing system}
+      \field{usera}{A}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \field{pages}{594\bibrangedash 595}
+      \range{pages}{2}
+      \keyw{Jin1993}
+    \endentry
+    \entry{footnote01}{footnote}{}{}
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{这是一条测试脚注，请把脚注写到参考文献bib文件中.}
+      \field{userd}{chinese}
+      \keyw{footnote01}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

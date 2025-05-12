@@ -1,16 +1,5 @@
 \pagestyle{empty}
-\noindent
-分类号
-\fixedunderline[4cm]{\theclsnum}
-\hfill
-密级
-\fixedunderline[4cm]{\theconflv} \\
-\noindent
-UDC \hspace{0.5em}
-\fixedunderline[4cm]{\theUDC}
-\hfill
-编号
-\fixedunderline[4cm]{\thethesisnum}
+\displayUDC
 
 \begin{center}
   \zihao{0}
@@ -45,7 +34,8 @@ UDC \hspace{0.5em}
   \zihao{4}
   \bfseries
   \vspace{20pt}
-  指\hspace{0.2em}导\hspace{0.2em}教\hspace{0.2em}师\hspace{0.2em}姓\hspace{0.2em}名 \uline{
+  \makebox[7em][s]{指导教师姓名}
+  \uline{
     \hfill 
     \printsupervisorcn
     \printsecondsupervisorcn
@@ -53,52 +43,61 @@ UDC \hspace{0.5em}
   }
   \newline
   \vspace{20pt}
-  申\hspace{0.2em}请\hspace{0.2em}学\hspace{0.2em}位\hspace{0.2em}级\hspace{0.2em}别 \uline{
+  \makebox[7em][s]{申请学位级别}
+  \uline{
     \hfill \thedgreelevelcn
     \hfill
   }
-  专业名称 \uline{
+  \makebox[6em][s]{专业名称}
+  \uline{
     \hfill \thefieldcn
     \hfill
   }
   \newline
   \vspace{20pt}
-  论\hspace{0.2em}文\hspace{0.2em}提\hspace{0.2em}交\hspace{0.2em}日\hspace{0.2em}期  \uline{
+  \makebox[7em][s]{论文提交日期}
+  \uline{
     \hfill \thesubmitdate
     \hfill
   }
-  论文答辩日期 \uline{
+  \makebox[6em][s]{论文答辩日期}
+  \uline{
     \hfill \thedefencedate
     \hfill
   }
   \newline
   \vspace{20pt}
-  学\hspace{0.2em}位\hspace{0.2em}授\hspace{0.2em}予\hspace{0.2em}单\hspace{0.2em}位 \uline{
-    \hfill 中国工程物理研究院
+  \makebox[7em][s]{学位授予单位}
+  \uline{
+    \hfill
+    \makebox[9em][c]{中国工程物理研究院}
     \hfill
   }
+  \dodisplaythedegreedate
   \newline
   \vspace{20pt}
-  答辩委员会主席 \uline{
+  \makebox[7em][s]{答辩委员会主席}
+  \uline{
     \hfill \thechairman \hfill
   }
   \newline
   \vspace{20pt}
-  评\hspace{2em}阅\hspace{2em}人 \uline{
+  \makebox[7em][s]{评阅人}
+  \uline{
     \hfill \thereviewerfirstline \hfill
   }
   \printreviewersecondline
   \newline
 }
 
-\vspace{10pt}
+\vspace{7pt}
 
 \begin{center}
   \noindent
   \CJKfamily{gbkai}
   \zihao{4}
   \bfseries
-  \thethesisdatecn
+  \thethesistimecn
 \end{center}
 
 \cleardoublepage

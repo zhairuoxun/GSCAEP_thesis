@@ -173,7 +173,7 @@
 %提交日期和答辩日期（中文）
 \newcommand{\dateofsubmmit}[1]{\newcommand{\thesubmitdate}{\zhdate{#1}}}
 \newcommand{\dateofdefense}[1]{\newcommand{\thedefencedate}{\zhdate{#1}}}
-
+\newcommand{\degreedate}[1]{\newcommand{\thedegreedate}{#1}}
 
 
 % 提取2024/05/03格式的日期字符串
@@ -189,10 +189,14 @@
 }
 
 %论文日期
-\newcommand{\thesisdate}[1]{\newcommand{\thethesisdatecn}{\zhdate{#1}}
+\newcommand{\thesisdate}[1]{
+  \newcommand{\thethesisdatecn}{\zhdate{#1}}
 \extractdate{#1}
+\newcommand{\thethesismonthcn}{\thelocalyear 年 \thelocalmonth 月}
 \newcommand{\thethesismonthen}{\monthname[\thelocalmonth], \thelocalyear}
 }
+\newcommand{\thethesistimecn}{\thethesismonthcn}
+\newcommand{\displaythesistimedate}{\renewcommand{\thethesistimecn}{\thethesisdatecn}}
 
 % 设置颜色
 \usepackage[colorlinks=true,linkcolor = black]{hyperref}
@@ -255,3 +259,40 @@
 
 \newcommand{\thethesisnum}{请填写编号}
 \newcommand{\thesisnum}[1]{\renewcommand{\thethesisnum}{#1}}
+
+
+% 设置是否显示UDC等信息
+\newcommand{\udcinformation}{
+  \noindent
+  分类号
+  \fixedunderline[4cm]{\theclsnum}
+  \hfill
+  密级
+  \fixedunderline[4cm]{\theconflv} \\
+  \noindent
+  UDC \hspace{0.5em}
+  \fixedunderline[4cm]{\theUDC}
+  \hfill
+  编号
+  \fixedunderline[4cm]{\thethesisnum}
+}
+
+\newcommand{\displayUDC}{
+  \vspace{4em}
+}
+
+\newcommand{\displayudcinformation}{
+  \renewcommand{\displayUDC}{\udcinformation}
+}
+
+
+\newcommand{\dodisplaythedegreedate}{}
+\newcommand{\displaydegreedate}{
+  \renewcommand{\dodisplaythedegreedate}{
+    \makebox[6em][c]{学位授予时间}
+    \uline{
+    \hfill
+    \makebox[9em][c]{\thedegreedate}
+    \hfill}
+    }
+    }
