@@ -26,7 +26,7 @@ XeLaTeX -> Biber -> XeLaTeX*2
 \usepackage{physics} % 物理常用符号
 ```
 
-## 更新寿命 2025 - 05 - 12
+## 更新说明 2025 - 05 - 12
 
 - 增加命令`\displayudcinformation`, 见`main.tex`第17行. 注释掉这一行, 则不显示UDC, 反之亦然.
 
@@ -46,7 +46,6 @@ XeLaTeX -> Biber -> XeLaTeX*2
 
 - 封面等从奇数页开始
 
-
 ## 更新说明 2025 - 05 - 04
 
 - 青年节快乐！
@@ -56,8 +55,6 @@ XeLaTeX -> Biber -> XeLaTeX*2
 - 对封面的排版进行了修改和优化，现在`答辩委员会成员`一栏改为`评阅人`
 
 - 支持 `评阅人` 分为两行
-
-
 
 ## 更新说明 2025 - 05 - 03
 
@@ -81,15 +78,11 @@ XeLaTeX -> Biber -> XeLaTeX*2
   
   - 标号分隔符从冒号改为空格
 
-
-
 ## 鸣谢：
 
 - T. F. Cui 
 - M. Z. Xing
 - L. X. Cui
-
-
 
 后续计划（挖坑）增加内容:
 
